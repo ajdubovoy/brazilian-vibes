@@ -1,0 +1,7 @@
+---js
+const layout = 'base.webc'
+---
+<h1>
+  Brazilian Vibes
+  <accessible-emoji emoji="₍ᐢ-(ｪ)-ᐢ₎" alt="capybara"></accessible-emoji>
+</h1>

@@ -1,0 +1,28 @@
+{
+  "name": "brazilian-vibes",
+  "version": "1.0",
+  "description": "Brazilian Vibes music website",
+  "type": "module",
+  "scripts": {
+    "build": "eleventy",
+    "d": "eleventy --serve --quiet",
+    "start": "eleventy --serve --quiet",
+    "noisy": "eleventy --serve",
+    "debug": "DEBUG=Eleventy* eleventy",
+    "debugstart": "DEBUG=Eleventy* eleventy --serve --quiet",
+    "benchmark": "DEBUG=Eleventy:Benchmark* eleventy"
+  },
+  "author": {
+    "name": "Alexander Dubovoy",
+    "url": "https://www.alexanderdubovoy.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0-beta.1",
+    "@11ty/eleventy-plugin-webc": "^0.11.2",
+    "emoji-short-name": "^2.0.0"
+  }
+}

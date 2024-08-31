@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title @text="title || metadata.title"></title>
+    <meta name="description" :content="description || metadata.description" />
+    <link rel="stylesheet" href="base.css" />
+    <style webc:keep @raw="getBundle('css')"></style>
+  </head>
+  <body>
+    <visually-hidden>
+      <a href="#skip">Skip to main content</a>
+    </visually-hidden>
+
+    <header></header>
+
+    <main id="skip" @raw="content"></main>
+
+    <footer></footer>
+
+    <script webc:type="js">
+      `<!-- Build timestamp: ${Date.now()} -->`;
+    </script>
+  </body>
+</html>
